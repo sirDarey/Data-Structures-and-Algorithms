@@ -33,7 +33,6 @@ public class a3_KadaneAlgorithm {
     
     void getSubArray (int []array, int startIndex) {
         int subArraySize = array.length - startIndex;
-        
         int [] subArray = new int[subArraySize];
         
         for (int i=0; i<subArraySize; i++) {
@@ -50,7 +49,7 @@ public class a3_KadaneAlgorithm {
     
     public static void main(String[] args) {
         a3_KadaneAlgorithm ka = new a3_KadaneAlgorithm();
-        int [] array = {4, 3, -2, 6, -12, 7, -1, 6};
+        int [] array = {4, 3, -2, 6, 12, 7, -1, 6};
         
         System.out.println("The Sum of the Array is: "
         +ka.calcMaxSum(array));
